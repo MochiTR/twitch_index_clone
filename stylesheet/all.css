@@ -263,6 +263,9 @@ table {
 .inner:nth-child(4) .video {
   width: 100%;
 }
+.inner:nth-child(4) .channelData {
+  display: none;
+}
 
 .inner:nth-child(5) {
   transform: translateX(35%) translateZ(-100px) scale(0.7);
@@ -271,4 +274,7 @@ table {
 }
 .inner:nth-child(5) .video {
   width: 100%;
+}
+.inner:nth-child(5) .channelData {
+  display: none;
 }/*# sourceMappingURL=all.css.map */

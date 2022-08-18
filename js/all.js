@@ -56,18 +56,24 @@ let transforms = [
       x : '-20%',
       z : '-50px',
       scale : 0.8,
-      hover : 'translateX(-20%) translateZ(-50px) scale(0.82)'
+      hover : 'translateX(-20%) translateZ(-50px) scale(0.82)',
+      width : '100%',
+      display:'none'
     },
     { 
       x : '0%',
       z : '0px',
       scale : 1,
+      width : '70%',
+      display:'inline-block'
     },
     { 
       x : '20%',
       z : '-50px',
       scale : 0.8,
-      hover : 'translateX(20%) translateZ(-50px) scale(0.82)'
+      hover : 'translateX(20%) translateZ(-50px) scale(0.82)',
+      width : '100%',
+      display:'none'
     },
     { 
       x : '35%',
@@ -106,6 +112,8 @@ function nextCarousel() {
         carousel[i].style.transform = "translateX("+transforms[nextRecord(i)].x+")"+
          "translateZ("+ transforms[nextRecord(i)].z+ ")"+ 
          "scale("+transforms[nextRecord(i)].scale +")";
+        carousel[i].childNodes[1].style.width=transforms[nextRecord(i)].width;
+        carousel[i].childNodes[3].style.display=transforms[nextRecord(i)].display;
     }
     transforms.unshift(transforms.pop());
 }
@@ -119,6 +127,8 @@ function preCarousel() {
         carousel[j].style.transform = "translateX("+transforms[preRecord(j)].x+")"+
          "translateZ("+ transforms[preRecord(j)].z+ ")"+ 
          "scale("+transforms[preRecord(j)].scale +")";
+         carousel[j].childNodes[1].style.width=transforms[preRecord(j)].width;
+         carousel[j].childNodes[3].style.display=transforms[preRecord(j)].display;
     }
     transforms.push(transforms.shift());
 }
