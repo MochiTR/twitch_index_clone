@@ -55,6 +55,7 @@ table {
 
 * {
   box-sizing: border-box;
+  font-family: Microsoft JhengHei;
 }
 
 .bar {
@@ -320,14 +321,15 @@ table {
 .recommend {
   margin-top: 24%;
 }
-.recommend .recommendTitle {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 0.8em;
-}
 .recommend .recommendBody {
   display: flex;
   justify-content: space-between;
+}
+
+.recommendTitle, .classTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.8em;
 }
 
 .card .cardHeader {
@@ -359,4 +361,42 @@ table {
 .card .cardBody .liveUser {
   font-size: 14px;
   color: #555555;
+}
+
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.classBody {
+  display: flex;
+  justify-content: space-between;
+}
+.classBody .card .cardHeader {
+  margin-bottom: 0.5em;
+}
+.classBody .card .recommendClass {
+  width: 180px;
+  transition: all 0.2s;
+}
+.classBody .card .recommendClass:hover {
+  cursor: pointer;
+  transform: translateX(5px) translateY(-5px);
+  box-shadow: -6px 6px #9146ff;
+}
+.classBody .card .cardBody {
+  display: flex;
+  line-height: 1.4;
+}
+.classBody .card .cardBody .liveTitle {
+  font-size: 14px;
+  font-weight: bold;
+}
+.classBody .card .cardBody .liveUser {
+  font-size: 14px;
+  color: #555555;
+}
+
+.classTitle span {
+  color: #7133cf;
 }/*# sourceMappingURL=all.css.map */
