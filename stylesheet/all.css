@@ -315,4 +315,48 @@ table {
 }
 .inner:nth-child(5) .channelData {
   display: none;
+}
+
+.recommend {
+  margin-top: 24%;
+}
+.recommend .recommendTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+}
+.recommend .recommendBody {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .cardHeader {
+  margin-bottom: 0.5em;
+}
+.card .recommendLive {
+  width: 386px;
+  transition: all 0.2s;
+}
+.card .recommendLive:hover {
+  cursor: pointer;
+  transform: translateX(5px) translateY(-5px);
+  box-shadow: -6px 6px #9146ff;
+}
+.card .cardBody {
+  display: flex;
+  line-height: 1.4;
+}
+.card .cardBody img {
+  width: 40px;
+  height: 40px;
+  margin: 0 0.6em 0.6em 0;
+  cursor: pointer;
+}
+.card .cardBody .liveTitle {
+  font-size: 17px;
+  font-weight: bold;
+}
+.card .cardBody .liveUser {
+  font-size: 14px;
+  color: #555555;
 }/*# sourceMappingURL=all.css.map */
