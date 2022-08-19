@@ -40,8 +40,10 @@ channelList.forEach(function(item){
 //頻道列表toggle
 const sideBar = document.querySelector('.sideBar');
 const toggle = document.querySelector('.toggle');
+const main = document.querySelector('.main');
 toggle.addEventListener('click',function(){
     sideBar.classList.toggle('toggle');
+    main.classList.toggle('expand');
 })
 
 //輪播監聽

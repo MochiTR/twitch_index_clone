@@ -91,10 +91,10 @@ table {
 .search input {
   width: 80%;
   outline: none;
-  border: 2px solid rgb(224, 224, 224);
+  border: 2px solid #e5e5e5;
   height: 2.3em;
   padding: 0.6em;
-  background: rgb(224, 224, 224);
+  background: #e5e5e5;
   border-radius: 0.4em 0 0 0.4em;
   transition: all 0.3s;
 }
@@ -138,6 +138,7 @@ table {
   width: 13%;
   font-size: 0.9em;
   transition: width 0.3s;
+  background: #efeff1;
 }
 .sideBar i {
   float: right;
@@ -174,6 +175,12 @@ table {
 .main {
   padding: 1em;
   width: 87%;
+  overflow: hidden;
+  background: #f7f7f8;
+}
+
+.expand {
+  width: 97%;
 }
 
 .carousel {
@@ -258,6 +265,11 @@ table {
 }
 .title .channelName {
   font-weight: bold;
+  text-decoration: none;
+  color: #5822aa;
+}
+.title .channelName:hover {
+  text-decoration: underline;
 }
 .title .watch {
   font-size: 14px;
@@ -355,8 +367,13 @@ table {
   cursor: pointer;
 }
 .card .cardBody .liveTitle {
+  text-decoration: none;
   font-size: 17px;
   font-weight: bold;
+  color: black;
+}
+.card .cardBody .liveTitle:hover {
+  color: #7133cf;
 }
 .card .cardBody .liveUser {
   font-size: 14px;
@@ -376,7 +393,6 @@ hr {
   margin-bottom: 0.5em;
 }
 .classBody .card .recommendClass {
-  width: 180px;
   transition: all 0.2s;
 }
 .classBody .card .recommendClass:hover {
@@ -390,11 +406,6 @@ hr {
 }
 .classBody .card .cardBody .liveTitle {
   font-size: 14px;
-  font-weight: bold;
-}
-.classBody .card .cardBody .liveUser {
-  font-size: 14px;
-  color: #555555;
 }
 
 .classTitle span {
