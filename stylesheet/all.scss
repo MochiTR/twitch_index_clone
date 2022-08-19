@@ -9,7 +9,7 @@
     display:flex;
     justify-content:space-between;
     align-items: center;
-    padding:0.8em;
+    padding:0.5em;
     svg {
         width:28px;
         height:28px;
@@ -18,7 +18,10 @@
     }
 }
 .search {
+  width:400px;
     .search_btn {
+      margin:-4px;
+      width:10%;
         padding:0.4em;
         border:none;
         border-radius:0 0.4em 0.4em 0;
@@ -29,9 +32,10 @@
         font-size: 16px;
     }
     input {
+        width:80%;
         outline: none;
         border:2px solid rgb(224, 224, 224);
-        height:2.2em;
+        height:2.3em;
         padding:0.6em;
         background: rgb(224, 224, 224);
         border-radius:0.4em 0 0 0.4em;
@@ -124,6 +128,18 @@
     left:50%;
     transform: translateX(-25%);
     transform-style: preserve-3d;
+    button {
+      background: none;
+      border:none;
+      &:hover {
+        background: rgb(221, 221, 221);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      i {
+        font-size: 2em;
+      }
+    }
     .pre {
         position:absolute;
         display:inline-block;
@@ -143,30 +159,52 @@
     display:flex;
     position:absolute;
     transform-style: preserve-3d;
+    box-shadow: 1px 4px 15px rgb(158, 158, 158);
   }
   .video {
     width:70%;
     height:300px;
-    border:1px solid black;
+    // border:1px solid black;
     display:inline-block;
       background: white;
+     video {
+      width:100%;
+      height: 100%;
+     }
   }
   .channelData {
     width:30%;
     height: 300px;
-    border:1px solid black;
+    // border:1px solid black;
     display:inline-block;
+    padding:0.6em;
         background: white;
+    p {
+      color:#2d2d2e;
+      line-height: 1.4;
+      font-size: 14px;
+    }
   }
   .title {
     display:flex;
     justify-content:flex-start;
     align-items:center;
     img {
-      border:1px solid black;
-      border-radius:50%;
-      width:60px;
-      height:60px;
+      width:50px;
+      height:50px;
+      margin:0 0.6em 0.6em 0;
+    }
+    p {
+      line-height: 1.4;
+      font-size:13px;
+      color:#5822aa;
+    }
+    .channelName {
+      font-weight: bold;
+    }
+    .watch {
+      font-size: 14px;
+      color:#2d2d2e;
     }
   }
   .inner:nth-child(1) {

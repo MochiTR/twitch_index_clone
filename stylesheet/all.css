@@ -63,7 +63,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8em;
+  padding: 0.5em;
 }
 .bar svg {
   width: 28px;
@@ -72,7 +72,12 @@ table {
   cursor: pointer;
 }
 
+.search {
+  width: 400px;
+}
 .search .search_btn {
+  margin: -4px;
+  width: 10%;
   padding: 0.4em;
   border: none;
   border-radius: 0 0.4em 0.4em 0;
@@ -83,9 +88,10 @@ table {
   font-size: 16px;
 }
 .search input {
+  width: 80%;
   outline: none;
   border: 2px solid rgb(224, 224, 224);
-  height: 2.2em;
+  height: 2.3em;
   padding: 0.6em;
   background: rgb(224, 224, 224);
   border-radius: 0.4em 0 0 0.4em;
@@ -176,6 +182,18 @@ table {
   transform: translateX(-25%);
   transform-style: preserve-3d;
 }
+.carousel button {
+  background: none;
+  border: none;
+}
+.carousel button:hover {
+  background: rgb(221, 221, 221);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.carousel button i {
+  font-size: 2em;
+}
 .carousel .pre {
   position: absolute;
   display: inline-block;
@@ -195,22 +213,31 @@ table {
   display: flex;
   position: absolute;
   transform-style: preserve-3d;
+  box-shadow: 1px 4px 15px rgb(158, 158, 158);
 }
 
 .video {
   width: 70%;
   height: 300px;
-  border: 1px solid black;
   display: inline-block;
   background: white;
+}
+.video video {
+  width: 100%;
+  height: 100%;
 }
 
 .channelData {
   width: 30%;
   height: 300px;
-  border: 1px solid black;
   display: inline-block;
+  padding: 0.6em;
   background: white;
+}
+.channelData p {
+  color: #2d2d2e;
+  line-height: 1.4;
+  font-size: 14px;
 }
 
 .title {
@@ -219,10 +246,21 @@ table {
   align-items: center;
 }
 .title img {
-  border: 1px solid black;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  margin: 0 0.6em 0.6em 0;
+}
+.title p {
+  line-height: 1.4;
+  font-size: 13px;
+  color: #5822aa;
+}
+.title .channelName {
+  font-weight: bold;
+}
+.title .watch {
+  font-size: 14px;
+  color: #2d2d2e;
 }
 
 .inner:nth-child(1) {
